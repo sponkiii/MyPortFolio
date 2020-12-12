@@ -22,7 +22,7 @@ a {
     box-sizing: border-box;
     background-color: #edf1fd;
     position: relative;
-    background-image: url("/repos/images/self-removebg-preview.png");
+    background-image: url("../images/self-removebg-preview.png");
     background-repeat: no-repeat;
     background-size: 500px;
     background-position: right bottom;
@@ -280,3 +280,4 @@ nav{
     transform: translateY(-10px);
     transition: all ease 0.5s;
 }
+
