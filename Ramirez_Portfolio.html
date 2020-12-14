@@ -4,6 +4,8 @@
     <head>
         <meta charset="utf-8" />
         <title>Ramirez Portfolio</title>
+        <meta http-equiv="X-UA-Compatible" content="Ie-edge">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/StyleSheet1.css"> <!--linking css to html-->
         <link rel="shortcut icon" href="images/Logo.png"/> <!--logo on tab-->
         <script src="http://kit.fontawesome.com/c8e4d183c2.js" 
@@ -20,15 +22,16 @@
                     
                     <img src="images/Logo2.png">
                 </a>
-                
+                <!--bar-icon-->
+                <div class="toggle"></div>
                 
                 
                 <ul class="menu"> <!--menu-->
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#" >About</a></li>
-                    <li><a href="#" >Services</a></li>
-                    <li><a href="#" >Portfolio</a></li>
-                    <li><a href="#" >Contacts</a></li>
+                    <li><a href="#main" class="active">Home</a></li>
+                    <li><a href="#about" >About</a></li>
+                    <li><a href="#services" >Services</a></li>
+                    <li><a href="#portfolio" >Portfolio</a></li>
+                    <li><a href="#contact-form" >Contacts</a></li>
                 </ul>
 
                 <a href="#" class="lang">
@@ -61,7 +64,7 @@
             <!--arrow-->
             <div class="arrow"></div>
         </section>
-        <!--about section========================-->
+        <!--about section==============================================-->
         <section id="about">
             <!--text-->
             <div class="about-text">
@@ -80,7 +83,7 @@
                 <img src="images/tauxNoBG.png" alt="model">
             </div>
         </section>
-        <!--Services=====================-->
+        <!--Services======================================================-->
         <section id="services">
             <!--services heading-->
             <div class="services-heading">
@@ -152,11 +155,130 @@
                         </a>
                     </div>
                 </div>
-               
-
-
             </div>
         </section>
-
+        <!--portfolio section==========================================-->
+        <section id="portfolio">
+            <!--heading-->
+            <h1 class="portfolio-heading">Portfolio</h1>
+            <!--portfolio-box-container-->
+            <div class="portfolio-box-container">
+                <!--box1-->
+                <div class="portfolio-box">
+                    <!--text-->
+                    <div class="text-overlay">
+                        <h1>Writing</h1>
+                        <p>Client Project</p>
+                    </div>
+                    <!--img-->
+                    <img src="images/FEnd_img.PNG" alt="portfolio">
+                </div>
+                <!--box2-->
+                <div class="portfolio-box">
+                    <!--text-->
+                    <div class="text-overlay">
+                        <h1>Writing</h1>
+                        <p>Client Project</p>
+                    </div>
+                    <!--img-->
+                    <img src="images/FEnd_img.PNG" alt="portfolio">
+                </div>
+                <!--box3-->
+                <div class="portfolio-box">
+                    <!--text-->
+                    <div class="text-overlay">
+                        <h1>Writing</h1>
+                        <p>Client Project</p>
+                    </div>
+                    <!--img-->
+                    <img src="images/FEnd_img.PNG" alt="portfolio">
+                </div>
+                <!--box4-->
+                <div class="portfolio-box">
+                    <!--text-->
+                    <div class="text-overlay">
+                        <h1>Writing</h1>
+                        <p>Client Project</p>
+                    </div>
+                    <!--img-->
+                    <img src="images/FEnd_img.PNG" alt="portfolio">
+                </div>
+                <!--box5-->
+                <div class="portfolio-box">
+                    <!--text-->
+                    <div class="text-overlay">
+                        <h1>Writing</h1>
+                        <p>Client Project</p>
+                    </div>
+                    <!--img-->
+                    <img src="images/FEnd_img.PNG" alt="portfolio">
+                </div>
+                <!--box6-->
+                <div class="portfolio-box">
+                    <!--text-->
+                    <div class="text-overlay">
+                        <h1>Writing</h1>
+                        <p>Client Project</p>
+                    </div>
+                    <!--img-->
+                    <img src="images/FEnd_img.PNG" alt="portfolio">
+                </div>
+            </div>
+        </section>
+        <!--contact-btn====================================-->
+        <section id="contact-btn">
+            <!--heading-->
+            <h1>If You Have Any Project In Your Mind, Why Stop There?</h1>
+            <a href="#contact-form">Contact Me</a>
+        </section>
+        <!--contact-form==================================-->
+        <section id="contact-form">
+            <form>
+                <!--left-->
+                <div class="contact-left">
+                    <!--heading-->
+                    <h1 class="contact-left-heading">
+                        <font style="border-bottom: 3px solid #1ed98b;">Write</font> us
+                    </h1>
+                    <!--form-name===============-->
+                    <div class="form-name">
+                        <!--name-->
+                        <font>Name</font>
+                        <!--input-->
+                        <input type="text" placeholder="Full Name">
+                    </div>
+                    <!--form-email===============-->
+                    <div class="form-email">
+                        <!--name-->
+                        <font>Email</font>
+                        <!--input-->
+                        <input type="email" placeholder="Example@yahoo.com">
+                    </div>
+                </div>
+                <!--right-->
+                <div class="contact-right">
+                    <!--message===-->
+                    <div class="message">
+                        <font>Message</font>
+                        <textarea name="message" rows="5" cols="20" placeholder="Write Message..."></textarea>
+                        
+                    </div>
+                    <!--submit-->
+                    <button>submit</button>
+                </div>
+            </form>
+        </section>
+        <!--Jquery-->
+        <script type="text/javascript" src="js/Jquery.js"></script>
+        <!--for change bar icon to "x"=-========-->
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.toggle').click(function(){
+                    $('.toggle').toggleClass('active')
+                    $('nav ul').toggleClass('active-menu')
+                })
+            })
+        </script>
     </body>
 </html>
+
