@@ -279,6 +279,8 @@ nav{
     font-size: 18px;
     border-radius: 0px 0px 10px 10px;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    text-align: center;
+    
 }
 .services-box:hover{
     transform: translateY(-10px);
@@ -566,12 +568,14 @@ nav{
 @media(max-width:900px){
     .toggle{
         display: block;
+        margin: auto;
     }
     .toggle:before{
         content: '\f0c9';
         font-family: fontAwesome;
         line-height: 0px;
-        margin: 200px;
+        
+        
     }
     .toggle.active::before{
         content: '\f00d';
