@@ -574,8 +574,6 @@ nav{
         content: '\f0c9';
         font-family: fontAwesome;
         line-height: 0px;
-        
-        
     }
     .toggle.active::before{
         content: '\f00d';
@@ -676,7 +674,7 @@ nav{
         width: 60%;
     }
     .arrow{
-        margin-bottom: 20px;
+        margin-bottom: 70px;
     }
     .social{
         left: 50px;
