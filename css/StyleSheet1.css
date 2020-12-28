@@ -527,7 +527,7 @@ nav{
     margin: auto;
     color: #000000;
     font-family: calibri;
-    background-color: #FFFFFF;
+    background-color: #f4f7ff;
 }
 #more-details-container{
     border: 1px solid rgb(255, 251, 0);
@@ -713,6 +713,29 @@ nav{
         margin: auto;
         text-align: center;
     }
+    #more-details{
+        height: auto;
+        width: 95% !important;
+        margin: auto;
+    }
+    #more-details-container{
+        flex-direction: column;
+        text-align: left;        
+        width: 100% !important;
+        margin: auto;
+
+    }
+    #basic-info-and-educational-background,
+    #Projects-and-Professional-Experience,
+    #skills{
+        width: 100% !important;
+        padding: 2px;
+        margin: 0%;
+        
+    }
+    
+
+    
 }
 @media(max-width:600px){
     #main{
