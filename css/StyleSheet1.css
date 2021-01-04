@@ -522,6 +522,7 @@ nav{
 }
 #more-details{
     border: 1px solid #7e7a7a;
+    border-radius: 5px;
     width: 99%;
     height: auto;
     margin: auto;
